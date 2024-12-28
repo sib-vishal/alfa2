@@ -567,11 +567,15 @@ section {
 .bannerForm_main .bannerForm input:focus,
 .bannerForm_main .bannerForm textarea:focus,
 .form-section input:focus,
-.form-section textarea:focus {
+.form-section textarea:focus,
+.popup input:focus,
+.popup textarea:focus {
   border-color: var(--primary-color);
   box-shadow: none;
 }
-
+ .btn-close {
+  filter: invert(1) !important;  
+}
 .contact-details .h_underline::after {
   background-color: #fff;
 }
@@ -906,4 +910,13 @@ section {
   filter: invert();
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23333'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   transform: rotate(-180deg);
+}
+.cta2 {
+  background-color: #5805077a;
+  background-image: url(../images/cta2.jpg);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

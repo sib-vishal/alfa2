@@ -44,37 +44,38 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<div class="modal-header">
+			<div class="modal-header bg_primary">
 				<h5 class="modal-title fontHeading text_primary" id="exampleModalLabel"> <span
-						class="fontWeight600">Enquire Now</span> <br /><span class="fs-6 text-dark">100% Free Career
+						class="fontWeight600 fontHeading text-white">Speak To A Our Expert</span> <br /><span class="fs-6 text-white-50">100% Free Career
 						Counseling</span></h5>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				<button type="button" class="btn-close  " data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
-				<form class="px-4">
-					<div class="formItem">
-						<label for="name">Name:</label>
-						<input type="text" id="name" name="name">
+				<form action="" class="bg-white popup ">
+					
+					<div class="px-4 py-4">
+						<div class="form-floating mb-3">
+							<input type="tel" class="form-control" id="floatingName" placeholder="Name">
+							<label for="floatingName">Name</label>
+						</div>
+						<div class="form-floating mb-3">
+							<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+							<label for="floatingInput">Email address</label>
+						</div>
+						<div class="form-floating mb-3">
+							<input type="tel" class="form-control" id="floatingPassword" placeholder="Phone No.">
+							<label for="floatingPassword">Phone No.</label>
+						</div>
+						<div class="form-floating">
+							<textarea class="form-control" placeholder="Leave a message here" style="height: 100px"
+								id="floatingTextarea"></textarea>
+							<label for="floatingTextarea">Message</label>
+						</div>
+						<button class="btn btn_6 fontHeading w-100 py-3 mt-3  " type="submit">
+							Speak To A Consultant
+						</button>
 					</div>
 
-					<div class="formItem">
-						<label for="mobile">Mobile Number:</label>
-						<input type="tel" id="mobile" name="mobile">
-					</div>
-
-					<div class="formItem">
-						<label for="email">Email ID:</label>
-						<input type="email" id="email" name="email">
-					</div>
-
-					<div class="formItem">
-						<label for="course">Course Name:</label>
-						<input type="text" id="course" name="course">
-					</div>
-
-					<div class="formItem mt-3 pb-2">
-						<button class="btn_2 w-100" type="submit">Submit</button>
-					</div>
 				</form>
 
 			</div>

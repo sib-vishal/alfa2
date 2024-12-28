@@ -180,17 +180,14 @@ $(function () {
   });
 });
 
-// const lenis = new Lenis({
-//   duration: .4, // Controls the scroll animation duration
-//   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function
-//   smoothWheel: true, // Enables smooth scrolling for mouse wheel
-//   smoothTouch: true, // Enables smooth scrolling for touch events
-// });
+document.addEventListener("DOMContentLoaded", () => {
+  const lenis = new Lenis();
 
-// // Update scroll position on animation frame
-// function raf(time) {
-//   lenis.raf(time); // Update Lenis scroll position
-//   requestAnimationFrame(raf); // Continue the animation loop
-// }
+  lenis.on('scroll', ScrollTrigger.update);
 
-// requestAnimationFrame(raf);
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 1000); // Convert time from seconds to milliseconds
+  });
+
+  gsap.ticker.lagSmoothing(0);
+});

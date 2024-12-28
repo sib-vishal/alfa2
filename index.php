@@ -698,6 +698,32 @@ $steps = [
 
             </div>
         </section>
+        <section class="cta2">
+            <div class="containerFull">
+                <h4 class="heading text-white fontHeading fontWeight600 h_underline text-center">
+                    Don't Wait! Start Your Career Path Today!
+
+                </h4>
+                <p class="text-white mt-5 text-center">Take the first step towards achieving your dreams.<br>
+                    Enroll now and start your journey<br>
+                    with expert guidance.</p>
+
+
+                <div class="d-flex justify-content-center gap-4 mt-5">
+
+                    <a class="fontHeading " href="" data-bs-toggle="modal" data-bs-target="#exampleModal"> <button
+                            class="btn_4"><i class="fa-regular fa-envelope me-2"></i>
+                            Request Call Back</button></a>
+                    <a class="fontHeading " href="tel:+91 8097044229"> <button class="btn_3"><i
+                                class="fa-solid fa-phone me-1"></i>
+                            +91 8097044229</button></a>
+                </div>
+
+
+
+            </div>
+
+        </section>
 
         <section>
 
