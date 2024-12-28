@@ -370,12 +370,12 @@ $steps = [
                         </div>
 
                     </div> -->
-                    <div class="col-lg-12 ps-5">
+                    <div class="col-lg-12 ">
                         <h4 class="heading fontHeading fontWeight600 h_underline ">
                             Programs & Courses Offered
                         </h4>
                         <p class="mt-5">
-                            Our vast range of Courses that has helped students to complete their education.<br/> Our
+                            Our vast range of Courses that has helped students to complete their education.<br /> Our
                             Universities are UGC Recognised, AICTE Approved, DEB approved, MHRD approved.
                         </p>
                         <div class=" row mt-5">
@@ -463,6 +463,425 @@ $steps = [
                 </div>
 
             </div>
+        </section>
+
+        <section class="affiliated_uni">
+            <div class="containerFull">
+                <h4 class="heading fontHeading fontWeight600 h_underline  ">
+                    Affiliated Universities
+                </h4>
+
+
+                <div class="swiper universities_slider mt-5  mb-5 ">
+                    <div class="swiper-wrapper">
+
+                        <?php foreach ($unilogos as $index => $logo): ?>
+                            <div class="swiper-slide mb-2">
+                                <div class="bx-inner">
+                                    <img src="<?php echo $logo; ?>" alt="Logo <?php echo $index + 1; ?>">
+                                </div>
+
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                    <div class="swiper-button-next text_primary"></div>
+                    <div class="swiper-button-prev text_primary"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+            </div>
+        </section>
+        <section class="cta_1 bg_primary">
+            <div class="containerFull">
+                <div class="row">
+
+                    <div class="col-lg-7">
+
+                        <h4 class="heading text-white fontHeading fontWeight600 h_underline ">
+                            Study With Us - Call Now <br /> to Choose Your Dream Course!
+                        </h4>
+                        <p class="mt-4 text-white ">
+                            Get the answers you need and the guidance you seek <br> with our Expert Counselors
+                        </p>
+
+                        <div class="d-flex  mt-5">
+                            <a class="fontHeading " href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button class="btn_7"><i class="fa-regular fa-envelope me-2"></i>
+                                    Request Call Back</button></a>
+                            <a class=" fontHeading ms-4" href="tel:+91 8097044229"> <button class="btn_3"><i
+                                        class="fa-solid fa-phone me-1"></i> +91 8097044229</button></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 cta1_right">
+                        <div class="img_box">
+                            <img src="images/graduate-man2.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="admission_process">
+            <div class="containerFull">
+                <h4 class="heading text-center fontHeading fontWeight600 h_underline ">
+                    6 Steps to Take Admission in Any Approved University
+
+                </h4>
+                <p class="mt-5 text-center">
+                    Our expert admission counselors will guide you through the process in a step-by-step manner, <br />
+                    ensuring that you have the necessary knowledge and skills to excel in your chosen course.
+                </p>
+
+
+                <div class="mt-5 row">
+                    <div class="col-lg-7 admission_process_left pe-5">
+                        <div class="img_box">
+                            <img src="images/process-admission.jpg" alt="">
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-5 ">
+                        <div class="admission_steps">
+
+                            <?php foreach ($steps as $index => $step): ?>
+
+                                <div class="steps-card" style="top: <?php echo $index * 120; ?>px;">
+                                    <div class="numbers">
+                                        <h4>
+                                            <?php echo $index + 1; ?>
+                                        </h4>
+
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="fontHeading small_heading text-white fontWeight700">
+                                            <?php echo $step['title']; ?>
+                                        </h4>
+
+                                        <p class="mt-3 text-white">
+                                            <?php echo $step['description']; ?>
+
+                                        </p>
+
+                                        <div class="mt-4">
+
+                                            <a class=" fontHeading " href="" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"> <button class="btn_3"><i
+                                                        class="fa-solid fa-phone me-1"></i> Request Call Back</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <?php endforeach; ?>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="why_choose" style="">
+            <div class="containerFull">
+                <div class="row ">
+                    <div class="col-lg-6 ">
+                        <h5 class="fontHeading sub_heading fontWeight600">
+                            Why Choose
+                        </h5>
+                        <h4 class="heading fontHeading fontWeight700 mt-3 text_primary">
+                            Alfa Education Consultancy?
+                        </h4>
+                        <p class="mt-3">
+                            Alfa Education Consultancy offers expert guidance to students for pursuing their higher
+                            education abroad, providing a comprehensive understanding of the course,
+                            offering personalized guidance, and ensuring that you have the necessary knowledge and
+                            skills to excel in your chosen course.
+                        </p>
+                        <p class="mt-3">
+                            We offer personalized guidance, customized courses, and a supportive community of
+                            students. Our expert admission counselors will guide you through the process in a
+                            step-by-step
+                            manner, ensuring that you have the necessary knowledge and skills to excel in your chosen
+                            course.
+
+
+                        </p>
+
+                        <div class=" mt-5">
+                            <a class="btn_5" href="tel:267-645-9005">
+                                <span class=" btn_icon bg-white circle pulse">
+                                    <i class="fa-solid fa-phone "></i>
+                                </span> <span>
+                                    <p class="btn_letterspacing ">
+                                        Contact with us
+                                    </p>
+                                    <h4 class="fontWeight700">
+                                        267-645-9005
+                                    </h4>
+                                </span> &nbsp;</a>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-6 ps-5">
+                        <div class=" why_swiper_main">
+                            <div class="swiper why_swiper  mt-5  mb-5 ">
+                                <div class="swiper-wrapper">
+
+
+                                    <div class="swiper-slide mb-2">
+                                        <h5 class="small_heading fontHeading fontWeight600">
+                                            1. Comprehensive Understanding of Course
+                                        </h5>
+
+                                        <div class="bx-inner mt-3">
+                                            <img src="images/free-consultation-for-study-abroad.webp" alt="Logo">
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide mb-2">
+                                        <h5 class="small_heading fontHeading fontWeight600">
+                                            2. 200+ Expert Counselors
+                                        </h5>
+
+                                        <div class="bx-inner mt-3">
+                                            <img src="images/free-consultation-for-study-abroad.webp" alt="Logo">
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide mb-2">
+                                        <h5 class="small_heading fontHeading fontWeight600">
+                                            3. Free Consultation
+                                        </h5>
+
+                                        <div class="bx-inner mt-3">
+                                            <img src="images/free-consultation-for-study-abroad.webp" alt="Logo">
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide mb-2">
+                                        <h5 class="small_heading fontHeading fontWeight600">
+                                            4. 900+ Partner Universities
+                                        </h5>
+
+                                        <div class="bx-inner mt-3">
+                                            <img src="images/free-consultation-for-study-abroad.webp" alt="Logo">
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide mb-2">
+                                        <h5 class="small_heading fontHeading fontWeight600">
+                                            1. Comprehensive Understanding of Course
+                                        </h5>
+
+                                        <div class="bx-inner mt-3">
+                                            <img src="images/free-consultation-for-study-abroad.webp" alt="Logo">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- <div class="swiper-button-next text_primary"></div>
+                                <div class="swiper-button-prev text_primary"></div> -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+
+            <div class="containerFull">
+                <h4 class="heading fontHeading fontWeight600 h_underline text-center">
+
+                    Awards & Achievements
+                </h4>
+                <div class="">
+
+                    <div class="swiper awards_slider mt-5 ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="images/award1.jpg" alt="Award 1">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="images/award2.jpg" alt="Award 2">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="images/award3.jpg" alt="Award 3">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="images/award4.jpg" alt="Award 4">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="images/award5.jpeg" alt="Award 5">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="images/award6.jpg" alt="Award 6">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="images/award7.jpg" alt="Award 7">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="images/award8.jpg" alt="Award 8">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="images/award.jpg" alt="Award 9">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next  next_1"></div>
+                        <div class="swiper-button-prev prev_1"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="faqs">
+            <div class="containerFull">
+                <h4 class="heading fontHeading fontWeight600 h_underline text-white">
+                    Frequently Asked Questions(FAQ)
+                </h4>
+
+                <div class="accordion mt-5" id="accordion1">
+                    <div class="accordion-item">
+                        <h4 class="accordion-header fontHeading" id="heading1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                1. What courses does Alpha Education offer?
+                            </button>
+                        </h4>
+                        <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                            data-bs-parent="#accordion1">
+                            <div class="accordion-body">
+                                Alpha Education offers a wide range of professional and academic courses,
+                                including business management, engineering, digital marketing, data science, and
+                                many more.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header fontHeading" id="heading2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                2. How do I enroll in a course at Alpha Education?
+                            </button>
+                        </h4>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                            data-bs-parent="#accordion1">
+                            <div class="accordion-body">
+                                You can easily enroll in any of our courses by visiting our website, selecting
+                                your desired course, and completing the registration process. Our team will
+                                assist you with the enrollment steps.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header fontHeading" id="heading3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                3. What are the fees for courses at Alpha Education?
+                            </button>
+                        </h4>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                            data-bs-parent="#accordion1">
+                            <div class="accordion-body">
+                                Fees for courses at Alpha Education vary based on the course type and duration.
+                                You can find detailed information on our website or contact our support team for
+                                specific queries.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header fontHeading" id="heading4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                4. Are there any scholarships available for Alpha Education students?
+                            </button>
+                        </h4>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                            data-bs-parent="#accordion1">
+                            <div class="accordion-body">
+                                Yes, Alpha Education offers various scholarship programs based on merit and
+                                financial need. Visit our scholarship page for more information and how to
+                                apply.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header fontHeading" id="heading5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                5. Can I study online with Alpha Education?
+                            </button>
+                        </h4>
+                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                            data-bs-parent="#accordion1">
+                            <div class="accordion-body">
+                                Yes, Alpha Education offers flexible online courses that can be accessed from
+                                anywhere in the world. Our online learning platform provides interactive
+                                sessions, recorded lectures, and support.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header fontHeading" id="heading6">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                6. How can I get more information about Alpha Education?
+                            </button>
+                        </h4>
+                        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                            data-bs-parent="#accordion1">
+                            <div class="accordion-body">
+                                For more information, you can visit our website, reach out to our support team
+                                via email or phone, or connect with us on social media platforms like Facebook,
+                                Instagram, and LinkedIn.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
         </section>
 
 
@@ -599,6 +1018,54 @@ $steps = [
 
             //     768: {
             //         slidesPerView: 4,
+            //         spaceBetween: 30
+            //     }
+            // }
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".why_swiper", {
+            spaceBetween: 20,
+            // centeredSlides: true,
+            slidesPerView: 1.4,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+
+            // breakpoints: {
+
+            //     320: {
+            //         slidesPerView: 1,
+            //         spaceBetween: 10
+            //     },
+
+            //     480: {
+            //         slidesPerView: 1,
+            //         spaceBetween: 20
+            //     },
+
+            //     640: {
+            //         slidesPerView: 2,
+            //         spaceBetween: 30
+            //     },
+
+            //     768: {
+            //         slidesPerView: 2,
+            //         spaceBetween: 30
+            //     }
+            //     1024: {
+            //         slidesPerView: 3,
             //         spaceBetween: 30
             //     }
             // }
